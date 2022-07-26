@@ -1,0 +1,11 @@
+import random
+while True :
+ print(“ Do you want to Roll the Dice ? ( y / n )”)
+ choice = input(“Enter Your Choice : “)
+ if choice == “y”:
+ num = random.randint(1,6)
+ print(num)
+ print(‘______________________________’)
+ else:
+ print(‘exit’)
+ break
