@@ -1,0 +1,3 @@
+To install Tkinter in your system , use the " pip install tk " command in the Command Line interface or any Python IDE.
+
+Also " import random " package to generate the random numbers 
