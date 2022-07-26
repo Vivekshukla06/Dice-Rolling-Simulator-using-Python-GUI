@@ -1,0 +1,22 @@
+import random
+import tkinter
+
+root = tkinter.Tk()
+root.geometry('500x500')
+root.title(' DICE SIMULATOR Project')
+
+label1 = tkinter.Label(root, text='', font=('Playful', 300))
+label2 = tkinter.Label(root, text='Welcome , Click above to roll the dice Again ', font=('Comic Sans', 12))
+label2.place(x=110, y=400)
+
+
+def dice_roll():
+    value = ['\u2680', '\u2681', '\u2682', '\u2683', '\u2684', '\u2685']
+    res = random.choice(value)
+    label1.configure(text=res)
+    label1.pack()
+
+
+button = tkinter.Button(root, text='Click to ROLL Again', foreground='Black', font=('Playful', 15), command=dice_roll)
+button.pack()
+root.mainloop()
